@@ -1,0 +1,85 @@
+@import './var.css';
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.product-card-container__box {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0 10px 15px var(--primary);
+    background: var(--secondary);
+}
+
+.box__product-img {
+    width: 300px;
+    height: 230px;
+    background:url("https://www.thecolvinco.com/es/c/wp-content/uploads/2020/06/1b-768x768.jpg") 0 -70px / cover;
+}
+
+.box__product-detail {
+    width: 300px;
+    height: 190px;
+    background: var(--primary);
+    border-radius: 0 40% 0 0;
+    padding: .8rem;
+    color: white;
+}
+
+.box__product-detail > p {
+    font-size: .9rem;
+    color: white;
+}
+
+.product-detail__rating {
+    font-size: .7rem;
+    color: var(--secondary);
+}
+
+.product-detail__options {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: var(--tertiary);
+    color: var(--accent);
+    height: 40px;
+    border-radius: 50px;
+    font-size: .9rem;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2.5px solid var(--accent);
+}
+
+.options__price {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.options__buy {
+    width: 160px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.options__favorite {
+    width: 40px;
+    border-radius: 50%;
+}
